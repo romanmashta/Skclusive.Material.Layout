@@ -16,11 +16,11 @@
     <RepositoryUrl>https://github.com/skclusive/Skclusive.Material.Layout</RepositoryUrl>
   </PropertyGroup>
 
-  <ItemGroup>
+<!--  <ItemGroup>
     <PackageReference Include="Skclusive.Material.Component" Version="2.0.0" />
-  </ItemGroup>
+  </ItemGroup>-->
 
-  <!-- <ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\Skclusive.Material.Component\Material\src\Material.csproj" Version="2.0.0" />
-  </ItemGroup> -->
+  </ItemGroup>
 </Project>
