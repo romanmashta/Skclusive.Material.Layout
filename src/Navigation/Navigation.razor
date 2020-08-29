@@ -21,10 +21,12 @@
                 style="@($"{_LinkStyle}")"
                 href="@item.Path"
                 Match="@(item.Prefix ? NavLinkMatch.Prefix : NavLinkMatch.All)">
-                <ListItemIcon
-                    Class="@_IconClass"
-                    Style="@_IconStyle">
-                    @item.Icon
+                <ListItemIcon>
+                    <MaterialIcon
+                        Class="@_IconClass"
+                        Style="@_IconStyle">
+                        @item.Icon
+                    </MaterialIcon>
                 </ListItemIcon>
                 <ListItemText
                         Primary="@item.Title" />

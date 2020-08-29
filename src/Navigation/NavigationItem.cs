@@ -9,7 +9,7 @@ namespace Skclusive.Material.Layout
 
         public string Path { set; get; }
 
-        public RenderFragment Icon { set; get; }
+        public string Icon { set; get; }
 
         public bool Prefix { set; get; }
     }

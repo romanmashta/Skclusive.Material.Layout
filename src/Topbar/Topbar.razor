@@ -8,6 +8,19 @@
     Color="@Color.Custom"
     @attributes="Attributes">
     <Toolbar>
+        @if (OnSidebarToggle != null)
+        {
+            <Hidden
+                LargeUp
+                Context="HiddenContext">
+                <IconButton
+                    Class="@HiddenContext.Class"
+                    Color="@Color.Inherit"
+                    OnClick="@OnSidebarToggle">
+                    <MenuIcon />
+                </IconButton>
+            </Hidden>
+        }    
         @if (HasLogoContent)
         {
             <NavLink
@@ -22,18 +35,5 @@
             class="@_GrowClass"
             style="@_GrowStyle" />
         @ActionsContent
-        @if (OnSidebarToggle != null)
-        {
-            <Hidden
-                LargeUp
-                Context="HiddenContext">
-                <IconButton
-                    Class="@HiddenContext.Class"
-                    Color="@Color.Inherit"
-                    OnClick="@OnSidebarToggle">
-                    <MenuIcon />
-                </IconButton>
-            </Hidden>
-        }
     </Toolbar>
 </AppBar>
