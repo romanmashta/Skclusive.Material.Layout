@@ -15,6 +15,9 @@ namespace Skclusive.Material.Layout
 
         [Parameter]
         public IEnumerable<NavigationItem> Items { set; get; } = Enumerable.Empty<NavigationItem>();
+        
+        [Parameter] 
+        public EventCallback<string> OnNavigate { get; set; }        
 
         [Parameter]
         public string ItemStyle { set; get; }

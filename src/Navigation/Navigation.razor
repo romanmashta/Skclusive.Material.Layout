@@ -10,17 +10,17 @@
     {
         <ListItem
             @key="@item.Title"
-            Class="@_ItemClass"
-            Style="@_ItemStyle"
-            NoWrap
-            DisableGutters
-            Button>
-            <NavLink
+             Class="@_ItemClass"
+             Style="@_ItemStyle"
+             NoWrap
+             DisableGutters
+             Button
+             OnClick="@(item.OnActivate)"
+             >
+            <div
                 ActiveClass="@_ActiveClass"
-                class="@($"{context.Class} {_LinkClass}")"
-                style="@($"{_LinkStyle}")"
-                href="@item.Path"
-                Match="@(item.Prefix ? NavLinkMatch.Prefix : NavLinkMatch.All)">
+                class="@($"{context.Class} {_LinkClass} {(item.Active == true ? _ActiveClass : "")}")"
+                style="@($"{_LinkStyle}")">
                 <ListItemIcon>
                     <MaterialIcon
                         Class="@_IconClass"
@@ -30,7 +30,7 @@
                 </ListItemIcon>
                 <ListItemText
                         Primary="@item.Title" />
-            </NavLink>
+            </div>
         </ListItem>
     }
 </List>

@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Components;
 using Skclusive.Material.Core;
 
@@ -7,10 +8,11 @@ namespace Skclusive.Material.Layout
     {
         public string Title { set; get; }
 
-        public string Path { set; get; }
+        public string ResourcePath { set; get; }
 
         public string Icon { set; get; }
 
-        public bool Prefix { set; get; }
+        public bool Active { set; get; }
+        public Action OnActivate { get; set; }
     }
 }
