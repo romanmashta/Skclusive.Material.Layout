@@ -147,9 +147,9 @@ namespace Skclusive.Material.Layout
 
         protected void OnMediaQueryChanged(object sender, bool match)
         {
-            IsDesktop = match;
+            //IsDesktop = match;
 
-            SidebarOpen = IsDesktop;
+            //SidebarOpen = IsDesktop;
 
             StateHasChanged();
         }
