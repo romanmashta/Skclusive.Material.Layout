@@ -22,11 +22,16 @@
                 class="@($"{context.Class} {_LinkClass} {(item.Active == true ? _ActiveClass : "")}")"
                 style="@($"{_LinkStyle}")">
                 <ListItemIcon>
-                    <MaterialIcon
-                        Class="@_IconClass"
-                        Style="@_IconStyle">
-                        @item.Icon
-                    </MaterialIcon>
+                    <Badge
+                        Class="Navigation-Badge"
+                        Color="@Color.Secondary"
+                        Badge="@item.Badge?.ToString()">
+                        <MaterialIcon
+                            Class="@_IconClass"
+                            Style="@_IconStyle">
+                            @item.Icon
+                        </MaterialIcon>
+                    </Badge>                    
                 </ListItemIcon>
                 <ListItemText
                         Primary="@item.Title" />
