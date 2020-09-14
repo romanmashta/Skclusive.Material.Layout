@@ -15,5 +15,6 @@ namespace Skclusive.Material.Layout
         public bool Active { set; get; }
         public Action OnActivate { get; set; }
         public int? Badge { get; set; }
+        public bool IsPrimary { get; set; }
     }
 }
