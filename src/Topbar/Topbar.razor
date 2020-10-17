@@ -8,7 +8,7 @@
     Color="@Color.Custom"
     @attributes="Attributes">
     <Toolbar>
-        @if (OnSidebarToggle != null)
+        @if (HasSideBar && OnSidebarToggle != null)
         {
             <Hidden
                 Context="HiddenContext">

@@ -24,6 +24,9 @@ namespace Skclusive.Material.Layout
 
         [Parameter]
         public RenderFragment ActionsContent { set; get; }
+        
+        [Parameter]
+        public bool HasSideBar { set; get; }
 
         [Parameter]
         public Action OnSidebarToggle { set; get; }

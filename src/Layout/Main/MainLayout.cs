@@ -48,7 +48,10 @@ namespace Skclusive.Material.Layout
 
         [Parameter]
         public string TopbarStyle { set; get; }
-
+        
+        [Parameter]
+        public bool HasSideBar { set; get; }
+        
         [Parameter]
         public string TopbarClass { set; get; }
 
